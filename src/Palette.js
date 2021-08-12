@@ -1,9 +1,11 @@
 import React , {Component} from 'react';
 import ColorBox from './ColorBox';
 import Ok from './Ok';
-import './Palette.css';
+
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
+//so the style doesnt get overwrite by thr default style of other libarary's
+import './Palette.css';
 class Palette extends Component{
     constructor(props){
         super(props);
@@ -26,13 +28,16 @@ class Palette extends Component{
         return (
             <div className="Palette">
                 Slider
-                <Slider 
-                    defaultValue={ level }
-                    step={100} 
-                    min={100} 
-                    max={900} 
-                    onAfterChange={this.changeLevel} 
-                />
+                <div className="slider">
+                    <Slider 
+                        defaultValue={ level }
+                        step={100} 
+                        min={100} 
+                        max={900} 
+                        onAfterChange={this.changeLevel} 
+                    />
+                </div>
+                
                 <div className="Palette-Colors">
                     {colorBoxes}
                    
