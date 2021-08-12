@@ -1,0 +1,46 @@
+.Navbar {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+
+
+}
+
+.logo {
+    margin-right:15px;
+    padding: 0 15px;
+    font-size: 25px;
+    background: #ece6;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width:350px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.rc-slider-track { 
+    background-color: transparent;
+}
+
+.rc-slider-rail {
+    height: 10px;
+}
+
+.rc-slider-handle:active {
+
+}
+
+.rc-slider-handle:hover {
+    background-color: blueviolet;
+    outline: none;
+    border:3px solid green;
+    box-shadow: none;
+    width: 15px;
+    
+}
