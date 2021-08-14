@@ -49,7 +49,7 @@ class PaletteList extends Component {
             <div className={classes.root}>
                 <div className={classes.container}>
                     <nav className={classes.nav}>
-                        <h1>react colors</h1>
+                        <h1>React Colors</h1>
                     </nav>
                     <div className={classes.palettes}>
                         {palettes.map((p)=>(<MiniPalette {...p} handleClick={()=>this.goToPalette(p.id)}/>))}

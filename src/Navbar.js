@@ -31,7 +31,7 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <div className="logo">
-                    <Link to="/"> Home Color</Link>
+                    <Link className="logo-link" to="/"> Home Color</Link>
                 </div>
                 <div className="slider-container">
                     <span>Level: {level}</span>
