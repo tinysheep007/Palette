@@ -60,6 +60,14 @@
     font-size: 15px;
 }
 
+.light-text {
+    color:white;
+}
+
+.ColorBox .dark-text {
+    color:black;
+}
+
 .see-more{
     background: pink;
     position: absolute;
