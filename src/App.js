@@ -18,6 +18,7 @@ class App extends Component {
     };
     this.savePalette=this.savePalette.bind(this);
     this.findPalette=this.findPalette.bind(this);
+    this.deletePalette=this.deletePalette.bind(this);
   }
   
   savePalette(newP){
@@ -25,13 +26,19 @@ class App extends Component {
   }
 
   syncStorage(){
-    window.localStorage.setItem("palettes",JSON.stringify(this.state.palettes));
+    window.localStorage.setItem("palettes", JSON.stringify(this.state.palettes));
   }
 
   findPalette(id){
     return this.state.palettes.find(function(palette){
       return palette.id===id;
     });
+  }
+
+  deletePalette(id){
+    this.setState((st)=>({
+      palettes : st.palettes.filter(palette => palette.id !== id)
+    }), this.syncStorage);
   }
 
   render() {
@@ -44,7 +51,7 @@ class App extends Component {
             savePalette={this.savePalette}
             palettes={this.state.palettes}
             />}/>
-          <Route exact path="/" render={(routeProps)=> <PaletteList palettes={this.state.palettes} {...routeProps}/>} />
+          <Route exact path="/" render={(routeProps)=> <PaletteList palettes={this.state.palettes} {...routeProps} deletePalette={this.deletePalette}/>} />
           <Route exact path="/palette/:id" render={(routeProps)=> (
             <Palette 
               palette={generatePalette(this.findPalette(routeProps.match.params.id))}
