@@ -1,54 +1,54 @@
+import sizes from './sizes';
+
 export default {
-    Palette : {
+    Palette: {
         height: "100vh",
         display: "flex",
         flexDirection: "column"
     },
-    PaletteColors :{
+    colors: {
         height: "90%"
     },
-    PaletteFooter :{
-        height: "5vh",
-        display: "flex",
-        justifyContent: "flex-end",
-        backgroundColor: "aquamarine",
-        fontWeight: "bold",
-        alignItems: "center"
-    },
-    emoji :{
-        margin:"0 1rem",
-        fontSize: "1.5rem"
-    },
-    goBack:{
+    goBack: {
         width: "20%",
-        height:  "50%",
+        height: "50%",
         margin: "0 auto",
         display: "inline-block",
-        cursor: "pointer",
         position: "relative",
-        marginBottom: "-4px",
-        opacity:"1",
-        backgroundColor:"black",
-        "& Link":{
+        cursor: "pointer",
+        marginBottom: "-3.5px",
+        opacity: "1",
+        backgroundColor: "black",
+        "& a": {
             color: "white",
             width: "100px",
             height: "30px",
             position: "absolute",
             display: "inline-block",
             top: "50%",
-            bottom: "50%",
-            textAlign: "center",
-            outline: "none",
-            background: "black",
-            fontSize: "1rem",
-            lineHeight: "30px",
+            left: "50%",
             marginLeft: "-50px",
             marginTop: "-15px",
-            color:"aliceblue",
+            textAlign: "center",
+            outline: "none",
+            background: "rgba(255,255,255,0.3)",
+            fontSize: "1rem",
+            lineHeight: "30px",
             textTransform: "uppercase",
+            border: "none",
             textDecoration: "none",
-            
-        }
+        },
+        [sizes.down("lg")]: {
+            width: "25%",
+            height: "33.3333%"
+        },
+        [sizes.down("md")]: {
+            width: "50%",
+            height: "20%"
+        },
+        [sizes.down("xs")]: {
+            width: "100%",
+            height: "10%"
+        },
     }
-
-}
+};
