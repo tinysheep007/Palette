@@ -1,46 +1,55 @@
-export default  {
-    "Navbar": {
-        justifyContent: "flex-start",
+import sizes from './sizes';
+
+export default {
+    Navbar: {
         display: "flex",
         alignItems: "center",
-        height: "6vh"
+        justifyContent: "flex-start",
+        height: "6vh",
     },
-    
-    "logo" :{
+    logo: {
         marginRight: "15px",
-        padding: "0 15px",
-        fontSize: "25px",
-        background: "#ece6",
-        fontFamily: "'Times New Roman', Times, serif",
+        padding: "0 13px",
+        fontSize: "22px",
+        backgroundColor: "#eceff1",
+        fontFamily: "Roboto",
         height: "100%",
         display: "flex",
         alignItems: "center",
-        textDecoration: "none"
-    },
-    "logoLink": {
-        textDecoration: "none"
-    },
-    
-    "slider": {
-        width:"350px",
-        margin: "0 10px",
-        display: "inline-block",
-        "& .rc-slider-track":{
-            backgroundColor: "transparent"
+        "& a": {
+            textDecoration: "none",
+            color: "black",
         },
-        "& .rc-slider-rail":{
-            height: "10px"
-        },
-        "& .rc-slider-handle:active, .rc-slider-handle:hover":{
-            backgroundColor: "blueviolet",
-            outline: "none",
-            border:"3px solid green",
-            boxShadow: "none",
-            width: "15px"
+        [sizes.down("xs")]: {
+            display: "none"
         }
     },
-    "selectContainer":{
+    slider: {
+        width: "340px",
+        margin: "0 10px",
+        display: "inline-block",
+        "& .rc-slider-track": {
+            backgroundColor: "transparent"
+        },
+        "& .rc-slider-rail": {
+            height: "8px"
+        },
+        "& .rc-slider-handle, .rc-slider-handle:active, .rc-slider-handle:focus, .rc-slider-handle:hover": {
+            backgroundColor: "green",
+            outline: "none",
+            border: "2px solid green",
+            boxShadow: "none",
+            width: "13px",
+            height: "13px",
+            marginLeft: "-7px",
+            marginTop: "-3px",
+        },
+        [sizes.down("md")]: {
+            width: "150px"
+        }
+    },
+    selectContainer: {
         marginLeft: "auto",
-        marginRight: "2rem"
+        marginRight: "1rem"
     }
-}
+};
