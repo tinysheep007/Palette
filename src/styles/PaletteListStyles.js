@@ -1,6 +1,6 @@
 import sizes from './sizes';
-import bg from './bg.svg';
-
+//import bg from './bg.svg';
+import bgNew from './bgNew.svg';
 export default {
     "@global":{
         ".fade-exit":{
@@ -18,11 +18,35 @@ export default {
         alignItems: "flex-start",
         justifyContent: "center",
         //background by SvgBackgrounds.com
-        background:`url(${bg})`,
+        background:`url(${bgNew})`,
         overflow:"scroll"
     },
     heading:{
-        fontSize:"3rem"
+        fontSize:"3rem",
+        fontFamily:"serif"
+    },
+    createBtn:{
+        fontSize:"2rem",
+        fontFamily:"Lucida Console",
+        fontStyle:"italic",
+        [sizes.down("xs")]: {
+            marginLeft: "10px"
+        }
+        
+    },
+    resetBtn:{
+        [sizes.down("xs")]: {
+            opacity:"0"
+        }
+    },
+    secondaryNav:{
+        display:"inline-block",
+        justifyContent:"space-between",
+        alignItems:"center",
+        [sizes.down("md")]: {
+            opacity:"0"
+        }
+
     },
     container: {
         width: "50%",

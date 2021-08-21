@@ -15,6 +15,7 @@ import blue from "@material-ui/core/colors/blue";
 import red from "@material-ui/core/colors/red";
 import styles from './styles/PaletteListStyles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Button from '@material-ui/core/Button';
 
 class PaletteList extends Component {
     constructor(props){
@@ -27,6 +28,7 @@ class PaletteList extends Component {
         this.closeDialog = this.closeDialog.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
         this.goToPalette = this.goToPalette.bind(this);
+        this.reset = this.reset.bind(this);
     }
 
     openDialog(id) {
@@ -46,6 +48,15 @@ class PaletteList extends Component {
         this.closeDialog();
     }
 
+    reset(){
+        window.localStorage.clear();
+        window.location.reload();
+    }
+
+    intro(){
+        alert("Welcome! Click the below palette and copy you fav color and use it anywhere! Maybe you want to make your own palette! (Not recommended for mobile user)");
+    }
+
     render() {
         const { palettes, classes, deletePalette } = this.props;
         const { openDeleteDialog, deletingId } = this.state;
@@ -53,9 +64,14 @@ class PaletteList extends Component {
             <div className={classes.root}>
                 <div className={classes.container}>
                     <nav className={classes.nav}>
-                        <h1 className={classes.heading}>React Colors</h1>
-                        <Link to="/palette/new">Create Palette</Link>
+                        <h1 className={classes.heading}>Da Palette</h1>
+                        <Link to="/palette/new" class={classes.createBtn}>Create Palette</Link>
+                        <Button className={classes.resetBtn} onClick={this.reset} variant="contained" color="secondary"> Reset </Button>
+                        <section className={classes.secondaryNav}>
+                            <Button variant="contained" color="primary" onClick={this.intro}>About</Button>
+                        </section>
                     </nav>
+                        
                         <TransitionGroup className={classes.palettes}>
                             {palettes.map(palette => (
                                 <CSSTransition key={palette.id} classNames="fade" timeout={500}>
