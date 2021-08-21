@@ -1,6 +1,6 @@
 export default {
     root: {
-        backgroundColor: "white",
+        backgroundColor: "black",
         border: "1px solid black",
         borderRadius: "5px",
         padding: "0.5rem",
@@ -23,10 +23,10 @@ export default {
         justifyContent: "space-between",
         alignItems: "center",
         margin: "0",
-        color: "black",
         paddingTop: "0.5rem",
         fontSize: "1rem",
-        position: "relative"
+        position: "relative",
+        color:"white"
     },
     emoji: {
         marginLeft: "0.5rem",
