@@ -54,7 +54,7 @@ class PaletteList extends Component {
     }
 
     intro(){
-        alert("Welcome! Click the below palette and copy you fav color and use it anywhere! Maybe you want to make your own palette! (Not recommended for mobile user)");
+        alert("Welcome! Click da palette and copy you fav color and use it anywhere! Maybe you want to make your own palette! (Not recommended for mobile user)");
     }
 
     render() {

@@ -43,7 +43,7 @@ export default {
         display:"inline-block",
         justifyContent:"space-between",
         alignItems:"center",
-        [sizes.down("md")]: {
+        [sizes.down("xs")]: {
             opacity:"0"
         }
 
