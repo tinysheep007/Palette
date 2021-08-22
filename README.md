@@ -1,3 +1,11 @@
+# Da Palette
+Deployed on github:
+https://tinysheep007.github.io/Palette/
+
+This Web app allows users to copy colors in rbg, rbga, and hex styles from either the pre-set palettes or the user's unique palette.
+When user saves a palette, the item will be stored locally and of course you can reset all the local soterage by pressing the "reset" button.
+The display of the main page will be slightly different than the views on computers. If you want to have the full experience of desgning palette, you can use a computer to view the page.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
