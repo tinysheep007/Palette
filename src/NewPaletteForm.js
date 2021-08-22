@@ -16,7 +16,7 @@ import seedColors from './seedColors'
 
 class NewPaletteForm extends Component {
     static defaultProps = {
-        maxColors: 50
+        maxColors: 20
     }
     constructor(props){
         super(props);
@@ -146,6 +146,7 @@ class NewPaletteForm extends Component {
           className={classNames(classes.content, {
             [classes.contentShift]: open
           })}
+          
         >
           <div className={classes.drawerHeader} />
           <DraggableColorList 
@@ -156,7 +157,7 @@ class NewPaletteForm extends Component {
             distance={15}
          />
         </main>
-      </div>
+        </div>
     );
   }
 }
