@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Palette/static/css/main.365e1a50.chunk.css",
+    "main.js": "/Palette/static/js/main.6a933fc7.chunk.js",
+    "main.js.map": "/Palette/static/js/main.6a933fc7.chunk.js.map",
+    "runtime-main.js": "/Palette/static/js/runtime-main.812c2b53.js",
+    "runtime-main.js.map": "/Palette/static/js/runtime-main.812c2b53.js.map",
+    "static/css/2.8dec86d5.chunk.css": "/Palette/static/css/2.8dec86d5.chunk.css",
+    "static/js/2.d798b376.chunk.js": "/Palette/static/js/2.d798b376.chunk.js",
+    "static/js/2.d798b376.chunk.js.map": "/Palette/static/js/2.d798b376.chunk.js.map",
+    "static/js/3.5e89b602.chunk.js": "/Palette/static/js/3.5e89b602.chunk.js",
+    "static/js/3.5e89b602.chunk.js.map": "/Palette/static/js/3.5e89b602.chunk.js.map",
+    "index.html": "/Palette/index.html",
+    "static/css/2.8dec86d5.chunk.css.map": "/Palette/static/css/2.8dec86d5.chunk.css.map",
+    "static/css/main.365e1a50.chunk.css.map": "/Palette/static/css/main.365e1a50.chunk.css.map",
+    "static/js/2.d798b376.chunk.js.LICENSE.txt": "/Palette/static/js/2.d798b376.chunk.js.LICENSE.txt",
+    "static/media/bgNew.b234c45a.svg": "/Palette/static/media/bgNew.b234c45a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.812c2b53.js",
+    "static/css/2.8dec86d5.chunk.css",
+    "static/js/2.d798b376.chunk.js",
+    "static/css/main.365e1a50.chunk.css",
+    "static/js/main.6a933fc7.chunk.js"
+  ]
+}
